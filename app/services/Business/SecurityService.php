@@ -2,7 +2,7 @@
 
 namespace App\services\Business;
 
-use App\Services\Data\SecurityDAO;
+use App\services\data\SecurityDAO;
 //use App\services\data\CustomerDAO;
 //use app\Models\CustomerModel;
 //use App\services\data\OrderDAO;
