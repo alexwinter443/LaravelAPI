@@ -10,10 +10,10 @@ class SecurityDAO{
     
     // Define the connection string
     private $conn;
-    private $dbserverName = "localhost";
-    private $dbusername = "root";
-    private $dbpassword = "root";
-    private $dbname = "javascriptdb";
+    private $dbserverName = "g84t6zfpijzwx08q.cbetxkdyhwsb.us-east-1.rds.amazonaws.com";
+    private $dbusername = "zefkyc3p6mt96yiw";
+    private $dbpassword = "lnjwlgsfniajtbmy";
+    private $dbname = "pfkkfibqs0a08n31";
     private $dbQuery = "" ;
     
     // constructor that creates a connection with the database

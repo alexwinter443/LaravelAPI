@@ -15,9 +15,9 @@ class DatabaseConnection{
     public function __construct(string $dbname){
         
         $this->dbname = $dbname;
-        $this->dbserverName = "localhost";
-        $this->dbusername = "root";
-        $this->dbpassword = "root";
+        $this->dbserverName = "g84t6zfpijzwx08q.cbetxkdyhwsb.us-east-1.rds.amazonaws.com";
+        $this->dbusername = "zefkyc3p6mt96yiw";
+        $this->dbpassword = "pfkkfibqs0a08n31";
     }
     
     function getConnection(){
