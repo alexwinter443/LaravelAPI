@@ -5,8 +5,7 @@ namespace App\services\Business;
 use App\Models\ProductsModel;
 
 //use App\Models\UserModel;
-//use App\Services\Data\SecurityDAO;
-use app\Services\Data\SecurityDAO;
+use App\Services\Data\SecurityDAO;
 //use App\services\data\CustomerDAO;
 //use app\Models\CustomerModel;
 //use App\services\data\OrderDAO;
