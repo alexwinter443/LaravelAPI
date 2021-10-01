@@ -6,6 +6,7 @@ use JsonSerializable;
 
 class ProductsModel implements JsonSerializable {
     
+    // variables
     private $name;
     private $description;
     private $id;

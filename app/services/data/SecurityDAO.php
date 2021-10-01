@@ -31,6 +31,7 @@ class SecurityDAO{
         
     }
     
+    // finds all products listed in mysql table
     public function findAllProducts(){
         
         try{
@@ -58,6 +59,7 @@ class SecurityDAO{
         
     }
     
+    // API POST method for products
     function addProduct($name, $description){
 
        $sql = "INSERT INTO products (name, description) VALUES ('" . $name . "', '" . $description . "')";
@@ -69,6 +71,7 @@ class SecurityDAO{
         }
     }
     
+    // API Delete method for products
     function deleteProduct($id){
         $sql = "DELETE FROM products WHERE ID = '" . $id . "'";
         if($this->conn->query($sql) == true){
@@ -79,6 +82,7 @@ class SecurityDAO{
     }
     
     
+    // API PUT method for products
     public function updateProduct($id, $name, $description){
         $sql = "UPDATE products SET name = '" . $name . "', description = '" . $description . 
             "' WHERE ID = '" . $id . "'";
@@ -89,7 +93,7 @@ class SecurityDAO{
         }
     }
     
-    
+    // TEST route gets product by ID
     public function findByUserID(int $id){
         
         try{

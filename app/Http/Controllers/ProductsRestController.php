@@ -10,7 +10,7 @@ class ProductsRestController extends Controller
 {
     
     /**
-     * Display a listing of the resource.
+     * Display all products
      *
      * @return \Illuminate\Http\Response
      */
@@ -27,7 +27,10 @@ class ProductsRestController extends Controller
         
     }
    
-    
+    /**
+     * Add Product
+     *
+     */
     public function addProduct1(Request $request, $name, $description)
     {    
         $securityService = new SecurityService();
@@ -41,6 +44,10 @@ class ProductsRestController extends Controller
         }      
     }
     
+    /**
+     * Delete Product Product
+     * 
+     */
     public function deleteProduct(Request $request, $id){
         $securityService = new SecurityService();
         $result = $securityService->deleteProduct($id);
@@ -53,6 +60,10 @@ class ProductsRestController extends Controller
         
     }
     
+    /**
+     * Put product
+     *
+     */
     public function updateProduct(Request $request, $id, $name, $description){
         $securityService = new SecurityService();
         $result = $securityService->updateProduct($id, $name, $description);

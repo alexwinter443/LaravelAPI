@@ -11,23 +11,25 @@ use App\services\data\SecurityDAO;
 ///THIS IS DONE!
 class SecurityService{
     
-    //private $verifyCred;
-    
+    // gets all products
     public function getAllProducts1(){
         $security = new SecurityDAO();
         return $security->findAllProducts();     
     }
     
+    // post product
     public function addProduct($name, $description){
         $security = new SecurityDAO();
         return $security->addProduct($name, $description);
     }
     
+    // delete product
     public function deleteProduct($id){
         $security = new SecurityDAO();
         return $security->deleteProduct($id);
     }
     
+    // put product
     public function updateProduct($id, $name, $description){
         $security = new SecurityDAO();
         return $security->updateProduct($id, $name, $description);
@@ -36,7 +38,7 @@ class SecurityService{
     
     
     
-    
+    // Test services
     public function findByUserId(int $id){
         $security = new SecurityDAO();
         return $security->findByUserID($id);
