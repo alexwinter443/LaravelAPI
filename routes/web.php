@@ -20,6 +20,10 @@ Route::get('/hello', function(){
         return view('HelloWorld');
 });
 
+    Route::get('/hello2', function(){
+        return view('HelloWorld');
+    });
+
 Route::get('/products', 'UsersRestController@index');
 Route::post('/products/{name}/{description}', 'UsersRestController@addProduct1');
 Route::put('products/update/{id}/{name}/{description}', 'UsersRestController@updateProduct');
