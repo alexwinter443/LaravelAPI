@@ -21,12 +21,12 @@ Route::get('/hello', function(){
 });
 
 
-Route::get('/products', 'UsersRestController@index');
-Route::post('/products/{name}/{description}', 'UsersRestController@addProduct1');
-Route::put('products/update/{id}/{name}/{description}', 'UsersRestController@updateProduct');
-Route::delete('/products/delete/{id}', 'UsersRestController@deleteProduct');
+Route::get('/products', 'ProductsRestController@index');
+Route::post('/products/{name}/{description}', 'ProductsRestController@addProduct1');
+Route::put('products/update/{id}/{name}/{description}', 'ProductsRestController@updateProduct');
+Route::delete('/products/delete/{id}', 'ProductsRestController@deleteProduct');
 
 
 
-Route::get('/products/{id}', 'UsersRestController@showProduct');
-Route::get('/products/{id}/{name}', 'UsersRestController@showProductname');
+Route::get('/products/{id}', 'ProductsRestController@showProduct');
+Route::get('/products/{id}/{name}', 'ProductsRestController@showProductname');

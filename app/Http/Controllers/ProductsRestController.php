@@ -6,7 +6,7 @@ use Illuminate\Http\Request;
 use App\services\Business\SecurityService;
 use App\Models\DTO;
 
-class UsersRestController extends Controller
+class ProductsRestController extends Controller
 {
     
     /**
