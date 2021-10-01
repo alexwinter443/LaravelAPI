@@ -2,14 +2,11 @@
 
 namespace App\services\Business;
 
-use App\Models\ProductsModel;
-
-//use App\Models\UserModel;
-use app\services\data\SecurityDAO;
+use App\Services\Data\SecurityDAO;
 //use App\services\data\CustomerDAO;
 //use app\Models\CustomerModel;
 //use App\services\data\OrderDAO;
-use App\services\data\utility\DatabaseConnection;
+
 
 ///THIS IS DONE!
 class SecurityService{
@@ -18,7 +15,7 @@ class SecurityService{
     
     public function getAllProducts1(){
         $security = new SecurityDAO();
-        return $security->findAllProducts();    
+        return $security->findAllProducts();     
     }
     
     public function addProduct($name, $description){
